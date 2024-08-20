@@ -50,4 +50,10 @@ public class Lemonade {
 	public double getPrice() {
 		return price;
 	}
+
+	@Override
+	public String toString() {
+		return "Lemonade [lemonJuice=" + lemonJuice + ", water=" + water + ", sugar=" + sugar + ", iceCubes=" + iceCubes
+				+ ", CUP=" + CUP + ", price=" + price + "]";
+	}
 }

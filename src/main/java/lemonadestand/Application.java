@@ -23,6 +23,7 @@ public class Application {
 			System.out.println(l.getPrice());
 		}
 		
+		System.out.println(order1.getCustomer().getName());
 		System.out.println(order1.getTotal());
 		
 		Order order2 = new Order(customer2);
@@ -36,8 +37,18 @@ public class Application {
 			System.out.println(l.getPrice());
 		}
 		
+		
+		System.out.println(order2.getCustomer().getName());
 		System.out.println(order2.getTotal());
 		
+		order1.equals(customer1);
+		order2.equals(null);
+		order2.equals(null);
+		order2.equals(null);
+		order2.equals(null);
+		order2.equals(null);
+
+		System.out.println(order1.toString());
 		
 	}
 	

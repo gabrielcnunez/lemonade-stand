@@ -3,11 +3,11 @@ package lemonadestand.model;
 import java.util.Arrays;
 
 public class Order {
-	
+
 	private Customer customer;
-	
+
 	private Lemonade[] lemonades;
-	
+
 	private double total;
 
 	public Order(Customer customer) {
@@ -16,7 +16,7 @@ public class Order {
 		lemonades = new Lemonade[0];
 		total = 0.0;
 	}
-	
+
 	public void addLemonade(Lemonade lemonade) {
 		Lemonade[] newLemonadeArray = Arrays.copyOf(lemonades, lemonades.length + 1);
 		newLemonadeArray[newLemonadeArray.length - 1] = lemonade;
@@ -35,4 +35,5 @@ public class Order {
 	public double getTotal() {
 		return total;
 	}
+	
 }
