@@ -1,13 +1,12 @@
 package lemonadestand.model;
 
-public class Customer {
+public class Customer implements Person {
 	
 	private String name;
-	
+		
 	private String phoneNumber;
 	
 	public Customer(String name, String phoneNumber) {
-		super();
 		this.name = name;
 		this.phoneNumber = phoneNumber;
 	}
